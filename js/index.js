@@ -85,15 +85,15 @@ const animate = () => {
 const draw = ()=>{
     if(dx!==0){
 
-        player.style.backgroundImage = `url('../img/Run (${index++}).png')`;
+        player.style.backgroundImage = `url('img/Run (${index++}).png')`;
 
     }else if(dy!==0){
 
-        player.style.backgroundImage = `url('../img/Jump (${index++}).png')`;
+        player.style.backgroundImage = `url('img/Jump (${index++}).png')`;
 
     }else{
         // index = 1;
-        player.style.backgroundImage = `url('../img/Idle (${index++}).png')`;
+        player.style.backgroundImage = `url('img/Idle (${index++}).png')`;
     }
     if(index>10) index =1;
 
