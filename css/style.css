@@ -5,7 +5,7 @@
 }
 
 #player {
-  background-image: url("../img/Idle (1).png");
+  background-image: url("img/Idle (1).png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom -10px;
@@ -19,13 +19,13 @@
 body {
   height: 100vh;
   overflow: hidden;
-  background-image: url("../img/BG.png");
+  background-image: url("img/BG.png");
   background-repeat: repeat-x;
   background-size: contain;
 }
 
 #ground {
-  background-image: url("../img/2.png");
+  background-image: url("img/2.png");
   height: 150px;
   width: 100vw;
   position: absolute;
@@ -40,7 +40,7 @@ body {
   height: 100px;
   left: 200px;
   bottom: 95px;
-  background-image: url("../img/Bush (3).png");
+  background-image: url("img/Bush (3).png");
   background-repeat: no-repeat;
   z-index: 0;
 }
@@ -51,7 +51,7 @@ body {
   height: 100px;
   left: 60%;
   bottom: 85px;
-  background-image: url("../img/Stone.png");
+  background-image: url("img/Stone.png");
   background-repeat: no-repeat;
   z-index: 6;
 }
@@ -62,7 +62,7 @@ body {
   height: 100px;
   left: 40%;
   bottom: 85px;
-  background-image: url("../img/Tree_1.png");
+  background-image: url("img/Tree_1.png");
   background-repeat: no-repeat;
   z-index: 1;
 }
@@ -73,7 +73,7 @@ body {
   height: 100px;
   left: 95%;
   bottom: 80px;
-  background-image: url("../img/Sign_2.png");
+  background-image: url("img/Sign_2.png");
   background-repeat: no-repeat;
   z-index: 5;
 }
