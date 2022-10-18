@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#player{
+    // background-color: red;
+    background-image: url('../img/Idle (1).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom -10px;
+    width: 160px;
+    height: 166px;
+    position: absolute;
+    bottom: 650px;
+}
+
+// html{
+//     height: 100%;
+// }
+
+body{
+    height: 100vh;
+    overflow: hidden;
+    // background-color: aquamarine;
+    background-image: url('../img/BG.png');
+    background-repeat: repeat-x;
+    background-size: contain
+}
+
+#ground{
+    // background-color: darkgreen;
+    background-image: url('../img/2.png');
+    height: 150px;
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+#bush{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 200px;
+    bottom: 95px;
+    background-image: url('../img/Bush\ \(3\).png');
+    background-repeat: no-repeat;
+}
+
+#stone{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 60%;
+    bottom: 85px;
+    background-image: url('../img/Stone.png');
+    background-repeat: no-repeat;
+}
+
+#tree{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 40%;
+    bottom: 85px;
+    background-image: url('../img/Tree_1.png');
+    background-repeat: no-repeat;
+}
+
+#sign{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 95%;
+    bottom: 80px;
+    background-image: url('../img/Sign_2.png');
+    background-repeat: no-repeat;
+    z-index: 99999;
+}
+
+
+.turn{
+    transform: rotateY(-180deg);
+}
