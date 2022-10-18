@@ -24,14 +24,14 @@ body{
     height: 100vh;
     overflow: hidden;
     // background-color: aquamarine;
-    background-image: url('img/BG.png');
+    background-image: url('../img/BG.png');
     background-repeat: repeat-x;
     background-size: contain
 }
 
 #ground{
     // background-color: darkgreen;
-    background-image: url('img/2.png');
+    background-image: url('../img/2.png');
     height: 150px;
     width: 100vw;
     position: absolute;
@@ -46,7 +46,7 @@ body{
     height: 100px;
     left: 200px;
     bottom: 95px;
-    background-image: url('img/Bush\ \(3\).png');
+    background-image: url('../img/Bush\ \(3\).png');
     background-repeat: no-repeat;
 }
 
@@ -56,7 +56,7 @@ body{
     height: 100px;
     left: 60%;
     bottom: 85px;
-    background-image: url('img/Stone.png');
+    background-image: url('../img/Stone.png');
     background-repeat: no-repeat;
 }
 
@@ -66,7 +66,7 @@ body{
     height: 100px;
     left: 40%;
     bottom: 85px;
-    background-image: url('img/Tree_1.png');
+    background-image: url('../img/Tree_1.png');
     background-repeat: no-repeat;
 }
 
@@ -76,7 +76,7 @@ body{
     height: 100px;
     left: 95%;
     bottom: 80px;
-    background-image: url('img/Sign_2.png');
+    background-image: url('../img/Sign_2.png');
     background-repeat: no-repeat;
     z-index: 99999;
 }
