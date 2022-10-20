@@ -2,9 +2,9 @@ const player = document.querySelector('#player');
 const ground = document.querySelector('#ground');
 
 
-let dx = 0;
-let dy = 0;
-let acceleration = 0.2;
+let dx = 0; // x-direction speed
+let dy = 0; // y-direction speed
+let acceleration = 0.3; // vertical acceleration
 let index = 1;
 
 // setInterval(() => {
@@ -58,7 +58,7 @@ const animate = () => {
     // if(index > 10) index = 1;
     if ((player.offsetLeft + player.offsetWidth) > innerWidth) {
         dx = 0;
-        player.style.left = `${innerWidth - player.offsetWidth}px`;
+        player.style.left = `${innerWidth - player.offsetWidth -40}px`;
     }
     else if (player.offsetLeft < 0) {
         dx = 0;
@@ -70,14 +70,14 @@ const animate = () => {
         dy = 0;
         player.style.top = `${ground.offsetTop - player.offsetHeight}px`;
         acceleration = 0;
-    }
-    else if(player.offsetTop < 0){
-        dy = 0;
-        player.style.top = '0';
-    }
+    }   
+    // else if(player.offsetTop < 0){
+    //     dy = 0;
+    //     player.style.top = '0';
+    // }
     
     player.style.left = `${player.offsetLeft + dx}px`;
-    player.style.top = `${player.offsetTop + dy}px`;
+    player.style.top = `${player.offsetTop + dy }px`;
 
     requestAnimationFrame(animate);
 };
@@ -107,21 +107,21 @@ const draw = ()=>{
 addEventListener('keydown', (eventData) => {
     if (eventData.keyCode === 39) {
         index = 1;
-        dx = 5;
+        dx = 10;
         player.classList.remove('turn');
     }
     else if (eventData.keyCode === 37) {
         index = 1;
-        dx = -5;
+        dx = -10;
         player.classList.add('turn');
     }
-    else if(eventData.keyCode === 40){
-        // console.log('hi');
-        dy = 10;
-    }
+    // else if(eventData.keyCode === 40){
+    //     dy = 10;
+    // }
     else if(eventData.keyCode === 38){
-        // console.log('hi');
         dy = -10;
+        index = 1;
+        acceleration = 0.3;
     }
 
     // console.log(eventData.keyCode);
@@ -138,14 +138,13 @@ addEventListener('keydown', (eventData) => {
     
 // });
 
-addEventListener('keyup', (key) => {
-    console.log(key);
+addEventListener('keyup', ({key}) => {
     if (key == 'ArrowRight' || key == 'ArrowLeft') {
         dx = 0;
     }
-    else if (key == 'ArrowUp' || key == 'ArrowDown') {
-        dy = 0;
-    }
+    // else if (key == 'ArrowUp' || key == 'ArrowDown') {
+    //     dy = 0;
+    // }
 });
 
 requestAnimationFrame(draw);
