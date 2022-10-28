@@ -158,8 +158,6 @@ Project Link: [mini-game](https://github.com/Eranga-Bandara/mini-game)
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
-
 * [Free 2D Game Assets](https://www.gameart2d.com/)
 * [Choose an Open Source License](https://choosealicense.com/)
 * [Img Shields](https://shields.io)
